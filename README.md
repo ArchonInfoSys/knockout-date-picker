@@ -1,30 +1,21 @@
-# Knockout Money Extender
+# Knockout DatePicker Binding
 
-> A simple knockout extender that wraps [accounting.js](http://josscrowcroft.github.io/accounting.js/).
+> Simple knockout binding that wraps jQuery UI's date picker script.
 
 ## Install with [Bower](http://bower.io/)
 
 ```
-bower install knockout-money
+bower install knockout-date-picker
 ```
 
-Then add `knockout.money.js` to your project.
+Then add `knockout.date-picker.js` to your project.
 
 ## How to Use
 
 Include the script on your page (either via a normal script tag or via an AMD loader). Then use it like so:
 
-```js
-var money = ko.observable().extend({ money: true });
-money("17000");
-
-console.log(money()); //17000
-console.log(money.formatted()); //$17,000.00
-```
-
-You can also use it to set formatted money as a value. This is useful for binding user-editable text boxes to the `formatted` computed.
-
-```js
-money.formatted("$17,000.56");
-console.log(money()); //17000.56
+```html
+<span data-bind="datePicker:{}">
+  <input data-bind="value: delinquentAt.usFormat" />
+</span>
 ```
