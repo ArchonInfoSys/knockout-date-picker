@@ -15,7 +15,5 @@ Then add `knockout.date-picker.js` to your project.
 Include the script on your page (either via a normal script tag or via an AMD loader). Then use it like so:
 
 ```html
-<span data-bind="datePicker:{}">
-  <input data-bind="value: delinquentAt.usFormat" />
-</span>
+<input data-bind="value: delinquentAt.usFormat, datePicker:{}" />
 ```

@@ -1,16 +1,24 @@
 (function(root, factory) {
 	if (typeof define === 'function' && define.amd) {
 		// AMD. Register as an anonymous module.
-		define(["jquery", "knockout", "lodash", "jquery.ui/datepicker"], factory);
+		define(["jquery", "knockout", "jquery.ui/datepicker"], factory);
 	} else {
 		// Browser globals
-		factory($, ko,_);
+		factory($, ko);
 	}
-}(this, function ($, ko, _) {
+}(this, function ($, ko) {
 	ko.bindingHandlers.datePicker = {
 		init: function (element, valueAccessor, allBindingsAccessor) {
 			var options = ko.utils.unwrapObservable(valueAccessor()) || {};
-			$(element).find('input').first().datepicker(options);
+
+			var valueBinding = allBindingsAccessor.get("value");
+ 			$(element).datepicker(Object.assign({}, options, {
+				onSelect: function() {
+					if (valueBinding) {
+ 						valueBinding(element.value);
+ 					}
+				}
+ 			}));
 		}
 	};
 }));

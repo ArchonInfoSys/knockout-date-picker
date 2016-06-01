@@ -1,6 +1,6 @@
 {
   "name": "knockout-date-picker",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "knockout.date-picker.js",
   "ignore": [
     "node_modules",
@@ -9,7 +9,6 @@
   "dependencies": {
     "knockout": "~3.1.0",
     "jquery": "~1.10",
-    "lodash": "~2.4.1",
     "jquery.ui": "~1.10.4"
   }
 }
