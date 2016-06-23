@@ -1,0 +1,33 @@
+{
+  "name": "knockout.datepicker",
+  "version": "3.0.0",
+  "description": "Simple knockout binding which wraps jQuery UI datepicker",
+  "main": "knockout.datepicker.js",
+  "scripts": {
+    "lint": "eslint . --format=unix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/civicsource/knockout.datepicker.git"
+  },
+  "keywords": [
+    "knockout",
+    "datepicker",
+    "jquery-ui"
+  ],
+  "author": "CivicSource",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/civicsource/knockout.datepicker/issues"
+  },
+  "homepage": "https://github.com/civicsource/knockout.datepicker#readme",
+  "dependencies": {
+    "jquery": "*",
+    "jquery-ui": "1.x"
+  },
+  "devDependencies": {
+    "babel-eslint": "6.x",
+    "eslint": "2.x",
+    "eslint-plugin-filenames": "1.x"
+  }
+}

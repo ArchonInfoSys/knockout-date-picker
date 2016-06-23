@@ -2,17 +2,17 @@
 
 > Simple knockout binding that wraps jQuery UI's date picker script.
 
-## Install with [Bower](http://bower.io/)
+## Installation
 
 ```
-bower install knockout-date-picker
+npm install knockout.datepicker
 ```
 
-Then add `knockout.date-picker.js` to your project.
+Then add `knockout.datepicker.js` to your project.
 
-## How to Use
+## Usage
 
-Include the script on your page (either via a normal script tag or via an AMD loader). Then use it like so:
+Include the script in your bundle via build system like browserify or webpack. Then use it like so:
 
 ```html
 <input data-bind="value: delinquentAt.usFormat, datePicker:{}" />
