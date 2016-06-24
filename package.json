@@ -29,5 +29,8 @@
     "babel-eslint": "6.x",
     "eslint": "2.x",
     "eslint-plugin-filenames": "1.x"
+  },
+  "peerDependencies": {
+    "knockout": "3.x"
   }
 }
